@@ -1,6 +1,6 @@
 {
   "name": "ngx-hisb-common-ui",
-  "version": "0.0.1",
+  "version": "0.0.0-watch+1698070794885",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
