@@ -8,21 +8,21 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
 import * as i0 from "@angular/core";
 export class NgxHisbCommonUiModule {
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.9", ngImport: i0, type: NgxHisbCommonUiModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule }); }
-    static { this.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.0.9", ngImport: i0, type: NgxHisbCommonUiModule, imports: [MatIconModule,
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.0.0", ngImport: i0, type: NgxHisbCommonUiModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule }); }
+    static { this.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "18.0.0", ngImport: i0, type: NgxHisbCommonUiModule, imports: [MatIconModule,
             MatToolbarModule,
             RouterLink,
             MatDividerModule,
             NgIf,
             BrowserAnimationsModule,
             MatButtonModule] }); }
-    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.0.9", ngImport: i0, type: NgxHisbCommonUiModule, imports: [MatIconModule,
+    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "18.0.0", ngImport: i0, type: NgxHisbCommonUiModule, imports: [MatIconModule,
             MatToolbarModule,
             MatDividerModule,
             BrowserAnimationsModule,
             MatButtonModule] }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.9", ngImport: i0, type: NgxHisbCommonUiModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.0.0", ngImport: i0, type: NgxHisbCommonUiModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [
