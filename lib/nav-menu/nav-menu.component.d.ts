@@ -1,15 +1,15 @@
 import { OnInit } from '@angular/core';
 import { OptionConfig } from "./option.config";
-import { Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 import * as i0 from "@angular/core";
 export declare class NavMenuComponent implements OnInit {
-    private router;
+    private activatedRoute;
     backgroundColor: string;
     contrastColor: string;
     options: OptionConfig;
     expanded: boolean;
     selectedOption: number;
-    constructor(router: Router);
+    constructor(activatedRoute: ActivatedRoute);
     ngOnInit(): void;
     toggleSize(): void;
     select(i: number): void;
@@ -19,7 +19,6 @@ export declare class NavMenuComponent implements OnInit {
      * @private
      */
     private setCurrentRoute;
-    private getModuleUrl;
     static ɵfac: i0.ɵɵFactoryDeclaration<NavMenuComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<NavMenuComponent, "common-nav-menu", never, { "backgroundColor": { "alias": "backgroundColor"; "required": false; }; "contrastColor": { "alias": "contrastColor"; "required": false; }; "options": { "alias": "options"; "required": false; }; }, {}, never, never, true, never>;
 }
