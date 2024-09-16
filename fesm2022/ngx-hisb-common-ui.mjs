@@ -17,7 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserModule } from '@angular/platform-browser';
 import * as i5$1 from '@angular/material/tooltip';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { take } from 'rxjs';
+import { tap } from 'rxjs';
 import * as i1$1 from '@angular/material/dialog';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 import * as i3$1 from '@angular/forms';
@@ -145,7 +145,7 @@ class NavMenuComponent {
      * @private
      */
     setCurrentRoute() {
-        this.activatedRoute.url.pipe(take(1)).subscribe(result => {
+        this.activatedRoute.url.pipe(tap(result => console.log(result))).subscribe(result => {
             this.selectedOption = this.options.options?.findIndex(el => el.routerLink == result?.[0].path) || 0;
             console.log(result);
             console.log(this.selectedOption);
