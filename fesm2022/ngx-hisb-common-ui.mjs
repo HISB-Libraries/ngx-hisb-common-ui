@@ -146,10 +146,6 @@ class NavMenuComponent {
                 this.currentRoute = this.extractPath(event?.['url']);
                 this.currentRouteStr.next(this.currentRoute);
             }
-            // const index = this.options.options.findIndex(option=> option.routerLink == this.currentRoute);
-            // if(index >= 0 ){
-            //   this.selectedOption = index
-            // }
         });
     }
     /**
@@ -169,15 +165,6 @@ class NavMenuComponent {
         else {
             return inputString.substring(firstSlashIndex + 1, secondSlashIndex);
         }
-    }
-    ngAfterViewInit() {
-        // // Now that we have the options object, we select the current route using the this.currentRoute variable.
-        // // Note that this will be executed only one time when the page is loaded.
-        // const index = this.options.options.findIndex(option=> option.routerLink == this.currentRoute);
-        // if(index >= 0 ){
-        //   this.selectedOption = index
-        // }
-        console.log("After view Init");
     }
     ngOnChanges(changes) {
         if (changes['options'].currentValue) {
