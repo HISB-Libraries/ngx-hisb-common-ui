@@ -168,7 +168,6 @@ class NavMenuComponent {
     }
     ngOnChanges(changes) {
         if (changes['options'].currentValue) {
-            console.log("After view Init");
             this.currentRouteStr$.subscribe(currentRoute => {
                 const index = this.options.options.findIndex(option => option.routerLink == currentRoute);
                 if (index >= 0) {
